@@ -1,12 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Main page{% endblock %}
+{% block content %}
     <h1>Hello world!</h1>
-</body>
-</html>
+    {% for test in tests %}
+        {{test}}
+    {% endfor %}
+{% endblock %}
