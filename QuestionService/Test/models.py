@@ -1,10 +1,11 @@
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 from Question.models import Quiz, Question, Option
 
 
 class Test(Quiz):
-    question_amount = models.IntegerField(default=0, verbose_name='Количество вопросов')
+    difficulty = models.IntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(10)])
 
     class Meta:
         verbose_name = 'Тест'
