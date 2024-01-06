@@ -7,6 +7,10 @@ html{
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-nav{
     display: flex;
     flex-wrap: wrap;
@@ -14,10 +18,13 @@ html{
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
+    font-family: 'Spectral', sans-serif;
 }
 
 .nav-logo{
   flex: start;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .nav-list{
@@ -27,5 +34,7 @@ html{
   margin: 30px 0;
   align-items: center;
   justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
 }
 
