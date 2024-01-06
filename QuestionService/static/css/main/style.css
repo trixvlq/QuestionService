@@ -1,0 +1,50 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,*::before{
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header{
+  background-color: #5E7F6E;
+}
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-family: 'Spectral', sans-serif;
+    color: #fff;
+}
+
+.nav-logo{
+  flex: start;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.nav-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.main-content{
+  display: flex;
+}
+
