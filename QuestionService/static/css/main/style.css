@@ -9,6 +9,11 @@ html{
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+.header{
+  background-color: #5E7F6E;
 }
 
 .header-nav{
@@ -19,6 +24,7 @@ a {
     justify-content: space-between;
     padding: 10px 40px;
     font-family: 'Spectral', sans-serif;
+    color: #fff;
 }
 
 .nav-logo{
