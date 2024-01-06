@@ -1,3 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
+from Quest.models import *
+
+
+def index(request):
+    quests = Quest.objects.all()
+    context = {
+        'title': 'Квесты',
+        'tests': quests,
+    }
+    return render(request, 'Question/special.html', context)

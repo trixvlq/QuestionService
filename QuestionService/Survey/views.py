@@ -1,3 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
+from Survey.models import *
+
+
+def index(request):
+    surveys = Survey.objects.all()
+    context = {
+        'title':'Опросы',
+        'tests':surveys,
+    }
+    return render(request,'Question/special.html', context)
