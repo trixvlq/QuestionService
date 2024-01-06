@@ -7,3 +7,23 @@ html{
   box-sizing: inherit;
 }
 
+.header-nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.nav-logo{
+  flex: start;
+}
+
+.nav-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex: end;
+  gap: 30px;
+  margin: 40px 0;
+}
+
