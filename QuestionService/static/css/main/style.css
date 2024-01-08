@@ -65,4 +65,9 @@ a {
 
 .week-info-title {    
   font-family: 'Spectral', sans-serif;
+  font-size: 40px;
+}
+
+.week-img{
+  width: 500px;
 }
