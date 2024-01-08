@@ -46,5 +46,23 @@ a {
 
 .main-content{
   display: flex;
+  
 }
 
+.reg-info-title {
+  font-family: 'Spectral', sans-serif;
+
+}
+.reg-info-subtitle {
+  font-family: 'Spectral', sans-serif;
+
+}
+
+.main-content-button_auth {
+  font-family: 'Spectral', sans-serif;
+
+}
+
+.week-info-title {    
+  font-family: 'Spectral', sans-serif;
+}
