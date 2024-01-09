@@ -46,7 +46,8 @@ a {
 
 .main-content{
   display: flex;
-  
+  margin: 0 40px;
+  justify-content: space-between;
 }
 
 .reg-info-title {
