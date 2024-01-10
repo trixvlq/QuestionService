@@ -5,6 +5,7 @@ html{
 *,
 *::after,*::before{
   box-sizing: inherit;
+  font-family: 'Spectral', sans-serif;
 }
 
 a {
@@ -14,7 +15,7 @@ a {
 
 .header{
   background-color: #5E7F6E;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -52,6 +53,12 @@ a {
   justify-content: space-between;
 }
 
+.main-content-week-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .reg-info-title {
   font-family: 'Spectral', sans-serif;
   font-size: 80px;
@@ -71,11 +78,38 @@ a {
 .week-info-title {    
   font-family: 'Spectral', sans-serif;
   font-size: 40px;
+  text-align: center;
 }
 
 .week-img{
   width: 500px;
   margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.main-content-button_auth, .main-content-button_week{
+  padding: 10px 30px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #5E7F6E;
+}
+
+.main-content-button_auth:hover, .main-content-button_week:hover{
+  background-color: #1E3951;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.list-link:hover{
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.main-content-button_week{
+  margin: 0 auto;
 }
 
 @media(max-width: 1000px){
