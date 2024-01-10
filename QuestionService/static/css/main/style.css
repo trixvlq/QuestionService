@@ -13,15 +13,17 @@ a {
 }
 
 .header{
-  background-color: red;
+  background-color: #5E7F6E;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+   
 }
 
-.header-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+.header-nav, .nav-logo{
     padding: 10px 40px;
     font-family: 'Spectral', sans-serif;
     color: #fff;
@@ -39,7 +41,7 @@ a {
   gap: 30px;
   margin: 30px 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: 500;
   font-size: 20px;
 }
@@ -52,11 +54,13 @@ a {
 
 .reg-info-title {
   font-family: 'Spectral', sans-serif;
-
+  font-size: 80px;
+  margin-bottom: 20px;
 }
 .reg-info-subtitle {
   font-family: 'Spectral', sans-serif;
-
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .main-content-button_auth {
@@ -71,4 +75,14 @@ a {
 
 .week-img{
   width: 500px;
+  margin-top: 40px;
+}
+
+@media(max-width: 1000px){
+  .main-content{
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
 }
