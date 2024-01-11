@@ -1,22 +1,72 @@
-{% extends 'base.html' %}
 {% load static %}
-{% block title %}Главная страница{% endblock %}
-{% block styles %}
-    <link rel="stylesheet" href="{% static 'css/main/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto+Condensed:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Spectral:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-{% endblock %}
-{% block content %}
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="nav-logo">FormFleet</a>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <ul class="list-link"><a href="#">Голосования</a>
+                </ul>
+                <ul class="list-link"><a href="#">Тесты</a>
+                </ul>
+                <ul class="list-link"><a href="#">Квизы</a>
+                </ul>
+                <ul class="list-link"><a href="#">Профиль</a>
+                </ul>
+            </ul>
+        </nav>
+    </header>
     <section class="main-content">
-        <span>
-            <h1>FormFleet</h1>
-            <h2>Платформа для создания и прохождения опросов</h2>
-            <button class="main-content-button_auth">Войти</button>
-            <button class="main-content-button_auth">Зарегистрироваться</button>
+        <span class="main-content-register-info">
+            <h1 class="reg-info-title">FormFleet</h1>
+            <h2 class="reg-info-subtitle">Платформа для создания и прохождения опросов</h2>
+            <button class="main-content-button_auth" id="authBtn">Войти</button>
+            <button class="main-content-button_auth" id="reg-btn_main">Зарегистрироваться</button>
         </span>
-        <span class="week">
-            <h2>Опрос недели</h2>
+        <form id="enter-form" class="enter-form hidden">
+            <h3 class="enter-form-title">Вход</h3>
+            <input id="email" type="email" placeholder="Введите ваш Email" class="email-input">
+            <input id="password" type="password" placeholder="Введите ваш пароль" class="password-input">
+            <label for="checkbox">Запомнить меня</label>
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <button class="main-content-button_auth form-auth">Войти</button>
+        </form>
+        <form id="reg-form" class="reg-form hidden">
+            <h3 class="enter-form-title">Регистрация</h3>
+            <input id="email" type="email" placeholder="Введите ваш Email" class="email-input">
+            <input id="password" type="password" placeholder="Введите ваш пароль" class="password-input">
+            <input id="password" type="password" placeholder="Введите ваш пароль ещё раз" class="password-input">
+            <button class="main-content-button_auth form-auth" id="reg-btn_form">Зарегистрироваться</button>
+        </form>
+        <span class="main-content-week-info">
+            <h2 class="week-info-title">Опрос недели</h2>
             <img class="week-img" src="{% static 'css/zaglushka.png' %}" alt="опрос недели">
+            <button class="main-content-button_week">Пройти</button>
+            
         </span>
     </section>
-{% endblock %}
+    <footer class="footer">
+    <nav class="footer-nav">
+        <ul class="footer-nav-list">
+            <li><a href="#" class="list-link_footer">Помощь</a></li>
+            <li><a href="#" class="list-link_footer">Политика конфиденциальности</a></li>
+            <li><a href="#" class="list-link_footer">Пользовательское соглашение</a></li>
+            <li><a href="#" class="list-link_footer">Партнеры</a></li>
+            <li><a href="#" class="list-link_footer">test.com © 2024</a></li>
+        </ul>
+    </nav>
+    <div class="footer-images">
+        <a href="https://github.com/trixvlq"><img class="footer-max" src="{% static 'css/img/max.jpg' %}" alt="Max"></a>
+        <a href="https://github.com/Fadin-Artem"><img class="footer-artem" src="{% static 'css/img/artem.jpg' %}" alt="Artem"></a>
+    </div>
+    <script src="{% static 'css/main/main.js' %}"></script>
+</body>
+</html>
