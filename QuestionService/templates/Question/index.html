@@ -29,7 +29,7 @@
             <h1 class="reg-info-title">FormFleet</h1>
             <h2 class="reg-info-subtitle">Платформа для создания и прохождения опросов</h2>
             <button class="main-content-button_auth" id="authBtn">Войти</button>
-            <button class="main-content-button_auth">Зарегистрироваться</button>
+            <button class="main-content-button_auth" id="reg-btn_main">Зарегистрироваться</button>
         </span>
         <form id="enter-form" class="enter-form hidden">
             <h3 class="enter-form-title">Вход</h3>
@@ -38,6 +38,13 @@
             <label for="checkbox">Запомнить меня</label>
             <input type="checkbox" id="checkbox" class="checkbox">
             <button class="main-content-button_auth form-auth">Войти</button>
+        </form>
+        <form id="reg-form" class="reg-form hidden">
+            <h3 class="enter-form-title">Регистрация</h3>
+            <input id="email" type="email" placeholder="Введите ваш Email" class="email-input">
+            <input id="password" type="password" placeholder="Введите ваш пароль" class="password-input">
+            <input id="password" type="password" placeholder="Введите ваш пароль ещё раз" class="password-input">
+            <button class="main-content-button_auth form-auth" id="reg-btn_form">Зарегистрироваться</button>
         </form>
         <span class="main-content-week-info">
             <h2 class="week-info-title">Опрос недели</h2>

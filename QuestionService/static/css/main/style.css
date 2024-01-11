@@ -166,7 +166,7 @@ a {
   width: 100vw;
 }
 
-.enter-form{
+.enter-form, .reg-form{
   display: flex;
   flex-direction: column;
    
