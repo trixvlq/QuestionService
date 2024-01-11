@@ -169,12 +169,14 @@ a {
 .enter-form, .reg-form{
   display: flex;
   flex-direction: column;
-   
+  transition: opacity 2s ease;
   align-items: center;
   border: #5E7F6E 1px solid;
   border-radius: 5%;
   width: 30vw;
   height: 50vh;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
 }
 
 .email-input{
@@ -206,5 +208,14 @@ a {
 }
 
 .hidden{
-  display: none;
+   display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
