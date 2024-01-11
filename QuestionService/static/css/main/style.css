@@ -1,5 +1,6 @@
 html{
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -19,9 +20,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
   justify-content: space-between;
-  width: 100vw;
-   
 }
 
 .header-nav, .nav-logo{
@@ -31,7 +31,6 @@ a {
 }
 
 .nav-logo{
-  flex: start;
   font-weight: 700;
   font-size: 30px;
 }
@@ -163,4 +162,5 @@ a {
   background-color: #5E7F6E;
   color: #fff;
   text-align: center;
+  width: 100vw;
 }
