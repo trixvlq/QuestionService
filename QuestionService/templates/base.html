@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="#" class="nav-logo">FormFleet</a>
+            <ul class="nav-list">
+                <ul class="list-link"><a href="#">Тесты</a>
+                </ul>
+                <ul class="list-link"><a href="#">Квесты</a>
+                </ul>
+                <ul class="list-link"><a href="#">Опросы</a>
+                </ul>
+                <ul class="list-link"><a href="#">Профиль</a>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+{% block content %}
+{% endblock %}
+</body>
+</html>
