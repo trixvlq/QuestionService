@@ -1,10 +1,35 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}{{ Title }}{% endblock %}
-{% block css %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto+Condensed:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Spectral:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/main/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="nav-logo">FormFleet</a>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <ul class="list-link"><a href="#">Голосования</a>
+                </ul>
+                <ul class="list-link"><a href="#">Тесты</a>
+                </ul>
+                <ul class="list-link"><a href="#">Квизы</a>
+                </ul>
+                <ul class="list-link"><a href="#">Профиль</a>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+{% block title %}Главная страница{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/main/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto+Condensed:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=Spectral:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 {% endblock %}
 {% block content %}
     <section class="main-content">
@@ -36,4 +61,21 @@
             
         </span>
     </section>
+    <footer class="footer">
+    <nav class="footer-nav">
+        <ul class="footer-nav-list">
+            <li><a href="#" class="list-link_footer">Помощь</a></li>
+            <li><a href="#" class="list-link_footer">Политика конфиденциальности</a></li>
+            <li><a href="#" class="list-link_footer">Пользовательское соглашение</a></li>
+            <li><a href="#" class="list-link_footer">Партнеры</a></li>
+            <li><a href="#" class="list-link_footer">test.com © 2024</a></li>
+        </ul>
+    </nav>
+    <div class="footer-images">
+        <a href="https://github.com/trixvlq"><img class="footer-max" src="{% static 'css/img/max.jpg' %}" alt="Max"></a>
+        <a href="https://github.com/Fadin-Artem"><img class="footer-artem" src="{% static 'css/img/artem.jpg' %}" alt="Artem"></a>
+    </div>
+    <script src="{% static 'css/main/main.js' %}"></script>
+</body>
+</html>
 {% endblock %}
