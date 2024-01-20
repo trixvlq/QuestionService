@@ -19,4 +19,5 @@ def index(request):
     return render(request, 'Question/index.html', context=context)
 
 
-# def quiz(request, pk):
+def quiz(request, pk):
+    return render(request,'Question/test.html')
